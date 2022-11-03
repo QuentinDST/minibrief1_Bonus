@@ -1,0 +1,21 @@
+body{
+    background-color: #3B3C8D;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.contact{
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.contact__title{
+    text-align: center;
+}
+
+form{
+    background-color: #232345;
+}
