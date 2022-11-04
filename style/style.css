@@ -24,8 +24,8 @@ h1{
 h2{
     font-size: 13px;
     font-style: italic;
-    font-weight: lighter;
-    margin-bottom: 25px;
+    font-weight: 200;
+    margin-bottom: 12px;
     margin-top: -5px;
 }
 
@@ -33,20 +33,19 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    width: 50%;
 }
 
 .form__contact{
     display: flex;
     flex-direction: column;
-    width: 50%;
     background-color: #232445;
     opacity: 0.9;
     border: none;
     float: left;
     border-radius: 3px;
     padding: 25px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 label{
@@ -54,19 +53,39 @@ label{
 }
 
 input{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .input{
+    border-radius: 5px;
+    border: none;
+    height: 20px;
+}
+
+.form__contact__name__input, .form__contact__email__input, .form__contact__age__input{
     height: 20px;
 }
 
 select{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.form__contact__current_role__select{
+    height: 30px;
+    margin-top: 5px;
+}
+
+.form__contact__current_role{
+    margin-bottom: 2px;
+}
+
+.form__contact__features__select{
+    height: 20px;
+    margin-top: 1px;
 }
 
 .form__contact__recommend{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .form__contact__features, .form__contact__comments{
@@ -77,10 +96,36 @@ select{
     height: 20px;
 }
 
+
 .form__contact__checkbox{
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 .form__contact__submit{
-
+    margin-top: 15px;
+    height: 30px;
+    background-color: #37AF65;
+    border: none;
+    color: #ffffff;
+    font-weight: 200;
+    border-radius: 2px;
 }
+
+.form__contact__submit:hover{
+    cursor: pointer;
+}
+
+
+/**** Font Span ****/
+
+.font__span__age, .font__span__checkbox{
+    font-size: 10px ;
+}
+
+/**** CSS Placeholder ****/
+
+::placeholder{
+    padding: 10px;
+}
+
+
