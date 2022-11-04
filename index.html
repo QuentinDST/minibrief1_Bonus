@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,86 +10,108 @@
     </head>
 
     <body>
-        <main class="contact">
-            <div class="contact__title">
-                <h1>freeCodeCamp Survey Form</h1>
-                <h2>thank you for taking the time to help us improve the platform</h2>
-            </div>
-
-            <form class="contact__form" action="post">
-                <div class="contact__form__name">
-                    <label for="name">Name</label>
-                    <input type="text" name="Name" id="name" placeholder="Enter your name">
-                </div>
-                <div class="contact__form__email">
-                    <label for="email">Email</label>
-                    <input type="text" name="mail" id="email" placeholder="Enter your Email">
-                </div>
-                <div class="contact__form__age">
-                    <label for="age">Age <span>(optional)</span></label>
-                    <input type="number" name="age" id="age" placeholder="Enter your Email">
-                </div>
-                <div class="contact__form__option">
-                    <label for="option">Which option best describes your current role?</label>
-                    <select name="current_role" id="option">
-                        <option value="role">Select current role</option>
+        <header class="header">
+            <h1>freeCodeCamp Survey Form</h1>
+            <h2>thank you for taking the time to help us improve the platform</h2>
+        </header>
+        
+        <form class="form" method="post" action="contact.php">
+            <fieldset class="form__contact">
+                
+                <label class="form__contact__name" for="name">Name</label>
+                <input type="text" name="Name" id="name" placeholder="Enter your name">
+                
+                
+                <label class="form__contact__email" for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="Enter your Email">
+                
+                <label class="form__contact__age" for="age">Age <span>(optional)</span></label>
+                <input type="number" name="age" id="age" placeholder="Age">
+                
+                <label class="form__contact__current_role" for="current__role">Which option best describes your current role?</label>
+                    <select name="current_role" id="current__role">
+                        <option value="0">Select current role</option>
                         <option value="back">Back</option>
                         <option value="front">Front</option>
                         <option value="security">Security</option>
                     </select>
-                </div>
-                <div class="contact__form__choose">
-                    <label for="choose1">Would you recommend freeCodeCamp to a friend?</label>
-                    <input type="radio" id="choose1" name="users" value="Definitely">
-                    <label for="choose1">Definitely</label>
-                    <input type="radio" id="choose2" name="users" value="maybe">
-                    <label for="choose2">Maybe</label>
-                    <input type="radio" id="choose3" name="users" value="not_sure">
-                    <label for="choose3">Not sure</label>
-                </div>
-                <div class="contact__form__feature">
-                    <label for="features">What is your favorite feature of freeCodeCamp?</label>
+                
+                <div class="form__contact__recommend">Would you recommend freeCodeCamp to a friend?</div>
+                    <div class="input">
+                        <input type="radio" id="choose1" name="recommend" value="Definitely">
+                        <label for="choose1">Definitely</label>
+                    </div>
+                    <div class="input">
+                        <input type="radio" id="choose2" name="recommend" value="maybe">
+                        <label for="choose2">Maybe</label>
+                    </div>
+                    <div class="input">
+                        <input type="radio" id="choose3" name="recommend" value="not_sure">
+                        <label for="choose3">Not sure</label>
+                    </div>
+                
+                <label class="form__contact__features" for="features">What is your favorite feature of freeCodeCamp?</label>
                     <select name="features" id="features">
-                        <option value="option">Select an option</option>
+                        <option value="0">Select an option</option>
                         <option value="back">Back</option>
                         <option value="front">Front</option>
                         <option value="security">Security</option>
                     </select>
+                
+                <div class="form__contact__checkbox">What would you like to see improved? <span>(Check at that apply)</span></div>
+                    <div class="checkbox">    
+                        <input classe="checkbox" type="checkbox" name="front" id="checkbox1">
+                        <label for="checkbox1">Front-end Projects</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="back" id="checkbox2">
+                        <label for="checkbox2">Back-end Projects</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="data" id="checkbox3">
+                        <label for="checkbox3">Data Visualization</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="challenges" id="checkbox4">
+                        <label for="checkbox4">Challenges</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="open_source" id="checkbox5">
+                        <label for="checkbox5">Open Source Community</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="help_rooms" id="checkbox6">
+                        <label for="checkbox6">Gitter help rooms</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="videos" id="checkbox7">
+                        <label for="checkbox7">Videos</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="meetups" id="checkbox8">
+                        <label for="checkbox8">City Meetups</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="wiki" id="checkbox9">
+                        <label for="checkbox9">Wiki</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="forumr" id="checkbox10">
+                        <label for="checkbox10">Forum</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="courses" id="checkbox11">
+                        <label for="checkbox11">Additional Courses</label>
+                    </div>
                 </div>
-                <div class="contact__form__checkbox">
-                    <label for="checkbox1">What would you like to see improved</label>
-                    <input type="checkbox" name="front" id="checkbox1">
-                    <label for="checkbox1" class="inline-label">Front-end Projects</label>
-                    <input type="checkbox" name="back" id="checkbox2">
-                    <label for="checkbox2" class="inline-label">Back-end Projects</label>
-                    <input type="checkbox" name="data" id="checkbox3">
-                    <label for="checkbox3" class="inline-label">Data Visualization</label>
-                    <input type="checkbox" name="challenges" id="checkbox4">
-                    <label for="checkbox4" class="inline-label">Challenges</label>
-                    <input type="checkbox" name="open_source" id="checkbox5">
-                    <label for="checkbox5" class="inline-label">Open Source Community</label>
-                    <input type="checkbox" name="help_rooms" id="checkbox6">
-                    <label for="checkbox6" class="inline-label">Gitter help rooms</label>
-                    <input type="checkbox" name="videos" id="checkbox7">
-                    <label for="checkbox7" class="inline-label">Videos</label>
-                    <input type="checkbox" name="meetups" id="checkbox8">
-                    <label for="checkbox8" class="inline-label">City Meetups</label>
-                    <input type="checkbox" name="wiki" id="checkbox9">
-                    <label for="checkbox9" class="inline-label">Wiki</label>
-                    <input type="checkbox" name="forumr" id="checkbox10">
-                    <label for="checkbox10" class="inline-label">Forum</label>
-                    <input type="checkbox" name="courses" id="checkbox11">
-                    <label for="checkbox11" class="inline-label">Additional Courses</label>
-                </div>
-                <div class="contact__form__comments">
-                    <label for="comments">Any comments or suggestions?</label>
-                    <textarea name="address" id="comments" cols="50" rows="5"
-                        placeholder="Enter your comment here..."></textarea>
-                </div>
-                <div class="contact__form__submit">
+
+                <label class="form__contact__comments" for="comments">Any comments or suggestions?</label>
+                    <textarea name="comments" id="comments" cols="50" rows="5" placeholder="Enter your comment here..."></textarea>
+                
+                <div class="form__contact__submit">
                     <button type="submit">Submit</button>
                 </div>
-            </form>
-        </main>
+            </fieldset>
+        </form>
     </body>
 </html>

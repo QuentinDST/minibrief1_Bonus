@@ -1,21 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
 body{
-    background-color: #3B3C8D;
     display: flex;
     flex-direction: column;
-    color: #ffffff;
-}
-
-.contact{
-    width: 60%;
-    justify-content: center;
     align-items: center;
-    margin: auto;
+    background-color: #7575BB;
+    font-family: 'Poppins';
+    color: #ffffff;
+    width: 92%;
 }
 
-.contact__title{
+
+h1, h2{
     text-align: center;
 }
 
-form{
-    background-color: #232345;
+h1{
+    font-size: 20px;
+    margin-top: -10px; 
+    margin-bottom: 5px;
+}
+
+h2{
+    font-size: 13px;
+    font-style: italic;
+    font-weight: lighter;
+    margin-bottom: 25px;
+    margin-top: -5px;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.form__contact{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: #232445;
+    opacity: 0.9;
+    border: none;
+    float: left;
+    border-radius: 3px;
+    padding: 25px;
+    font-size: 14px;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+input{
+    margin-bottom: 20px;
+}
+
+.input{
+    height: 20px;
+}
+
+select{
+    margin-bottom: 20px;
+}
+
+.form__contact__recommend{
+    margin-bottom: 10px;
+}
+
+.form__contact__features, .form__contact__comments{
+    margin-top: 20px;
+}
+
+.checkbox{
+    height: 20px;
+}
+
+.form__contact__checkbox{
+    margin-bottom: 5px;
+}
+
+.form__contact__submit{
+
 }
