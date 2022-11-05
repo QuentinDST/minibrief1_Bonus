@@ -7,9 +7,12 @@ body{
     background-color: #7575BB;
     font-family: 'Poppins';
     color: #ffffff;
-    width: 92%;
+    width: 100%;
+    height: 100%;
 }
 
+
+/**** HEADER ****/
 
 h1, h2{
     text-align: center;
@@ -29,11 +32,13 @@ h2{
     margin-top: -5px;
 }
 
+
+/**** FORM CONTACT ****/
+
 .form{
-    display: flex;
+    width: 45%;
+    margin: auto;
     align-items: center;
-    justify-content: center;
-    width: 50%;
 }
 
 .form__contact{
@@ -42,64 +47,110 @@ h2{
     background-color: #232445;
     opacity: 0.9;
     border: none;
-    float: left;
     border-radius: 3px;
     padding: 25px;
     font-size: 12px;
 }
 
-label{
+/**** NAME - EMAIL - AGE ****/
+
+.form__contact__name, .form__contact__email, .form__contact__age {
     margin-bottom: 5px;
 }
 
-input{
+.form__contact__input__name, .form__contact__input__email, .form__contact__input__age{
+    height: 20px;
+    font-family: 'poppins';
     margin-bottom: 15px;
 }
 
-.input{
-    border-radius: 5px;
-    border: none;
-    height: 20px;
-}
 
-.form__contact__name__input, .form__contact__email__input, .form__contact__age__input{
-    height: 20px;
-}
+
+/**** SELECT -- CURRENT ROLE ****/
+
 
 select{
     margin-bottom: 15px;
 }
 
-.form__contact__current_role__select{
-    height: 30px;
+.form__contact__select__current__role{
+    height: 28px;
     margin-top: 5px;
+    font-family: 'poppins';
+    font-weight: 300;
+    padding-left: 8px;
 }
 
 .form__contact__current_role{
     margin-bottom: 2px;
 }
 
-.form__contact__features__select{
+
+
+/**** RADIO -- RECOMMEND ****/
+
+
+.radio{
     height: 20px;
-    margin-top: 1px;
+    display: flex;
+    align-items: center;
+
 }
 
 .form__contact__recommend{
     margin-bottom: 5px;
 }
 
-.form__contact__features, .form__contact__comments{
+
+
+
+/**** SELECT -- FEATURES****/
+
+
+
+.form__contact__features{
     margin-top: 20px;
 }
 
+.form__contact__select__features{
+    height: 28px;
+    margin-top: 5px;
+    font-family: 'poppins';
+    font-weight: 300;
+    padding-left: 8px;
+}
+
+
+
+/**** CHECKBOX -- IMPROVED ****/
+
+
+
 .checkbox{
     height: 20px;
+    display: flex;
+    align-items: center;
 }
 
 
 .form__contact__checkbox{
     margin-bottom: 2px;
 }
+
+
+
+
+/**** TEXTAREA -- COMMENTS ****/
+
+.form__contact__comments{
+    margin-top: 20px;
+}
+
+
+
+/**** SUBMIT ****/
+
+
 
 .form__contact__submit{
     margin-top: 15px;
@@ -121,6 +172,8 @@ select{
 .font__span__age, .font__span__checkbox{
     font-size: 10px ;
 }
+
+
 
 /**** CSS Placeholder ****/
 
