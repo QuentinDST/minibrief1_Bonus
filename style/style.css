@@ -14,6 +14,11 @@ body{
 
 /**** HEADER ****/
 
+.header{
+    width: 40%;
+    margin: auto;
+}
+
 h1, h2{
     text-align: center;
 }
@@ -36,14 +41,14 @@ h2{
 /**** FORM CONTACT ****/
 
 .form{
-    width: 45%;
+    width: 40%;
     margin: auto;
-    align-items: center;
 }
 
 .form__contact{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: #232445;
     opacity: 0.9;
     border: none;
