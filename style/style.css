@@ -15,8 +15,9 @@ body{
 /**** HEADER ****/
 
 .header{
-    width: 40%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 h1, h2{
@@ -41,7 +42,6 @@ h2{
 /**** FORM CONTACT ****/
 
 .form{
-    width: 40%;
     margin: auto;
 }
 
@@ -185,5 +185,3 @@ select{
 ::placeholder{
     padding: 10px;
 }
-
-
