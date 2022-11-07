@@ -41,10 +41,6 @@ h2{
 
 /**** FORM CONTACT ****/
 
-.form{
-    margin: auto;
-}
-
 .form__contact{
     display: flex;
     flex-direction: column;
@@ -55,6 +51,7 @@ h2{
     border-radius: 3px;
     padding: 25px;
     font-size: 12px;
+    width: 550px;
 }
 
 /**** NAME - EMAIL - AGE ****/
@@ -68,7 +65,6 @@ h2{
     font-family: 'poppins';
     margin-bottom: 15px;
 }
-
 
 
 /**** SELECT -- CURRENT ROLE ****/
@@ -185,3 +181,4 @@ select{
 ::placeholder{
     padding: 10px;
 }
+
