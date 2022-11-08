@@ -182,3 +182,13 @@ select{
     padding: 10px;
 }
 
+
+/**** MEDIA QUERIES ****/
+
+
+@media (max-width: 650px){
+    .form__contact{
+        width: 150px;
+    }
+}
+
